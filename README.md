@@ -22,6 +22,7 @@ debe quedar asi
 C:\DWOLF45
 (lo se,no pone mongolean,es por el motivo de multiples proyectos alternativos)
 No lo he probado en terceros,solo en 2 pc,el mio y el de mis padres,puede existir algun pequeño inconveniente,aunque no deberia,
-en un futuro no muy lejano pretendo hacerle un setup de instalacion,pero en todo caso seria en funcion de la demanda,al ser algo privado a mi y a mis padres nos vale,pero si alguien
-cree que le puede ser de utilidad...por favor te ruego que me lo comuniques y lo mejoraria en gran  manera para el uso comun,espero que pueda seros de utilidad,gracias por leer este ladrillo
-y disfrutad de mongolean
+en un futuro no muy lejano pretendo hacerle un setup de instalacion.
+
+Nota adicional : Disculpa el desorden de carpetas y archivos,pretendia subir el proyecto para que pudieras verlo,pero dispongo de poco tiempo,en un futuro arreglare este desorden,de momento he subido 11 archivos rar (no me permitian subir archivos
+con un tamaño mayor a 25 mb) descomprimiendo esos archivos comprimidos aparece la carpeta "DWOLF45" ,con todo lo necesario para la ejecucion de esta navegador,espero que os guste,a disfrutar :)
