@@ -1,0 +1,178 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "print/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/TSCActiveX.dll": {},
+          "lib/TSCLIB.dll": {}
+        },
+        "runtime": {
+          "lib/TSCActiveX.dll": {},
+          "lib/TSCLIB.dll": {}
+        }
+      },
+      "RawPrint/0.5.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/RawPrint.dll": {}
+        },
+        "runtime": {
+          "lib/net40/RawPrint.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "print/1.0.0": {
+      "sha512": "bHsYOQfr2F/czQVTGVy64f9lL9QnJhXOc63En+X3+SuHgLgQ39zHnGnJOI2ftqEb5t7LS58OpUoyPcUNKnc2+w==",
+      "type": "package",
+      "path": "print/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/TSCActiveX.dll",
+        "lib/TSCLIB.dll",
+        "print.1.0.0.nupkg.sha512",
+        "print.nuspec"
+      ]
+    },
+    "RawPrint/0.5.0": {
+      "sha512": "MbQu5siz3sXUXht1IeXIQbb5daTPDmEOxo6Crms+b5N2F7tqCOXl3Rn6r5Y+ystz/Cy8lRBPfkMDpZGQnzzxcQ==",
+      "type": "package",
+      "path": "rawprint/0.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net40/RawPrint.dll",
+        "rawprint.0.5.0.nupkg.sha512",
+        "rawprint.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "RawPrint >= 0.5.0",
+      "print >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\deivi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\BLocdenotaspropio\\Blocdenotaspropio\\Blocdenotaspropio\\Blocdenotaspropio.vbproj",
+      "projectName": "Blocdenotaspropio",
+      "projectPath": "E:\\BLocdenotaspropio\\Blocdenotaspropio\\Blocdenotaspropio\\Blocdenotaspropio.vbproj",
+      "packagesPath": "C:\\Users\\deivi\\.nuget\\packages\\",
+      "outputPath": "E:\\BLocdenotaspropio\\Blocdenotaspropio\\Blocdenotaspropio\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\deivi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "RawPrint": {
+            "target": "Package",
+            "version": "[0.5.0, )"
+          },
+          "print": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"print 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "print",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"RawPrint 0.5.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "RawPrint",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}

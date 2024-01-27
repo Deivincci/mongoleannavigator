@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.AspNetCore.Components.WebView.Maui</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.AndroidMauiAssetFileProvider">
+            <summary>
+            A minimal implementation of an IFileProvider to be used by the BlazorWebView and WebViewManager types.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.AndroidWebKitWebViewManager">
+            <summary>
+            An implementation of <see cref="T:Microsoft.AspNetCore.Components.WebView.WebViewManager"/> that uses the Android WebKit WebView browser control
+            to render web content.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.AndroidWebKitWebViewManager.#ctor(Android.Webkit.WebView,System.IServiceProvider,Microsoft.AspNetCore.Components.Dispatcher,Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore,System.String,System.String,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Constructs an instance of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.AndroidWebKitWebViewManager"/>.
+            </summary>
+            <param name="webview">A wrapper to access platform-specific WebView APIs.</param>
+            <param name="services">A service provider containing services to be used by this class and also by application code.</param>
+            <param name="dispatcher">A <see cref="T:Microsoft.AspNetCore.Components.Dispatcher"/> instance that can marshal calls to the required thread or sync context.</param>
+            <param name="fileProvider">Provides static content to the webview.</param>
+            <param name="contentRootRelativeToAppRoot">Path to the directory containing application content files.</param>
+            <param name="hostPageRelativePath">Path to the host page within the <paramref name="fileProvider"/>.</param>
+            <param name="logger">Logger to send log messages to.</param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.AndroidWebKitWebViewManager.NavigateCore(System.Uri)">
+            <inheritdoc />
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.AndroidWebKitWebViewManager.SendMessage(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorAndroidWebView">
+            <summary>
+            A Blazor Web View implemented using <see cref="T:Android.Webkit.WebView"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorAndroidWebView.#ctor(Android.Content.Context)">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorAndroidWebView"/>
+            </summary>
+            <param name="context">The <see cref="T:Android.Content.Context"/>.</param>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.BlazorWebViewMapper">
+            <summary>
+            This field is part of MAUI infrastructure and is not intended for use by application code.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler"/> with default mappings.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.#ctor(Microsoft.Maui.PropertyMapper)">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler"/> using the specified mappings.
+            </summary>
+            <param name="mapper">The property mappings.</param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.MapHostPage(Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView)">
+            <summary>
+            Maps the <see cref="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.HostPage"/> property to the specified handler.
+            </summary>
+            <param name="handler">The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler"/>.</param>
+            <param name="webView">The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView"/>.</param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler.MapRootComponents(Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler,Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView)">
+            <summary>
+            Maps the <see cref="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.RootComponents"/> property to the specified handler.
+            </summary>
+            <param name="handler">The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebViewHandler"/>.</param>
+            <param name="webView">The <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView"/>.</param>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView">
+            <summary>
+            A <see cref="T:Microsoft.Maui.Controls.View"/> that can render Blazor content.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.#ctor">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.HostPage">
+            <summary>
+            Gets or sets the path to the HTML file to render.
+            <para>This is an app relative path to the file such as <c>wwwroot\index.html</c></para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.RootComponents">
+            <inheritdoc cref="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.RootComponents" />
+        </member>
+        <member name="E:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.UrlLoading">
+            <summary>
+            Allows customizing how links are opened.
+            By default, opens internal links in the webview and external links in an external app.
+            </summary>
+        </member>
+        <member name="E:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.BlazorWebViewInitializing">
+            <summary>
+            Raised before the web view is initialized. On some platforms this enables customizing the web view configuration.
+            </summary>
+        </member>
+        <member name="E:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.BlazorWebViewInitialized">
+            <summary>
+            Raised after the web view is initialized but before any component has been rendered. The event arguments provide the instance of the platform-specific web view control.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView.CreateFileProvider(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView">
+            <summary>
+            Defines a contract for a view that renders Blazor content.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.HostPage">
+            <summary>
+            Gets the path to the HTML file to render.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.RootComponents">
+            <summary>
+            Gets a collection of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent"/> items.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.JSComponents">
+            <summary>
+            Gets the <see cref="T:Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.CreateFileProvider(System.String)">
+            <summary>
+            Creates a file provider for static assets used in the <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView"/>. The default implementation
+            serves files from a platform-specific location. Override this method to return a custom <see cref="T:Microsoft.Extensions.FileProviders.IFileProvider"/> to serve assets such
+            as <c>wwwroot/index.html</c>. Call the base method and combine its return value with a <see cref="T:Microsoft.Extensions.FileProviders.CompositeFileProvider"/>
+            to use both custom assets and default assets.
+            </summary>
+            <param name="contentRootDir">The base directory to use for all requested assets, such as <c>wwwroot</c>.</param>
+            <returns>Returns a <see cref="T:Microsoft.Extensions.FileProviders.IFileProvider"/> for static assets.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.UrlLoading(Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs)">
+            <summary>
+            Notifies the control that the UrlLoading event should be raised with the specified <paramref name="args"/>.
+            </summary>
+            <param name="args">The arguments for the event.</param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.BlazorWebViewInitializing(Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs)">
+            <summary>
+            Notifies the control that the BlazorWebViewInitializing event should be raised with the specified <paramref name="args"/>.
+            </summary>
+            <param name="args">The arguments for the event.</param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.IBlazorWebView.BlazorWebViewInitialized(Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs)">
+            <summary>
+            Notifies the control that the BlazorWebViewInitialized event should be raised with the specified <paramref name="args"/>.
+            </summary>
+            <param name="args">The arguments for the event.</param>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder">
+            <summary>
+            A builder for .NET MAUI Blazor WebViews.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.IMauiBlazorWebViewBuilder.Services">
+            <summary>
+            Gets the builder service collection.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent">
+            <summary>
+            Describes a root component that can be added to a <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.Selector">
+            <summary>
+            Gets or sets the CSS selector string that specifies where in the document the component should be placed.
+            This must be unique among the root components within the <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.ComponentType">
+            <summary>
+            Gets or sets the type of the root component. This type must implement <see cref="T:Microsoft.AspNetCore.Components.IComponent"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent.Parameters">
+            <summary>
+            Gets or sets an optional dictionary of parameters to pass to the root component.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection">
+            <summary>
+            A collection of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponent"/> items.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection.#ctor(Microsoft.AspNetCore.Components.Web.JSComponentConfigurationStore)">
+            <summary>
+            Initializes a new instance of <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection"/>.
+            </summary>
+            <param name="jsComponents">Configuration to enable JS component support.</param>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.Maui.RootComponentsCollection.JSComponents">
+            <inheritdoc />
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs">
+            <summary>
+            Allows configuring the underlying web view after it has been initialized.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializedEventArgs.WebView">
+            <summary>
+            Gets the <see cref="T:Android.Webkit.WebView"/> instance that was initialized.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.BlazorWebViewInitializingEventArgs">
+            <summary>
+            Allows configuring the underlying web view when the application is initializing.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Components.WebView.StaticContentHotReloadManager.UpdateContent(System.String,System.Boolean,System.String,System.Byte[])">
+            <summary>
+            MetadataUpdateHandler event. This is invoked by the hot reload host via reflection.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs">
+            <summary>
+            Used to provide information about a link (<![CDATA[<a>]]>) clicked within a Blazor WebView.
+            <para>
+            Anchor tags with target="_blank" will always open in the default
+            browser and the UrlLoading event won't be called.
+            </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs.Url">
+            <summary>
+            Gets the <see cref="P:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs.Url">URL</see> to be loaded.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs.UrlLoadingStrategy">
+            <summary>
+            The policy to use when loading links from the webview.
+            Defaults to <see cref="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.OpenExternally"/> unless <see cref="P:Microsoft.AspNetCore.Components.WebView.UrlLoadingEventArgs.Url"/> has a host
+            matching the app origin, in which case the default becomes <see cref="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.OpenInWebView"/>.
+            <para>
+            This value should not be changed to <see cref="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.OpenInWebView"/> for external links
+            unless you can ensure they are fully trusted.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy">
+            <summary>
+            URL loading strategy for anchor tags <![CDATA[<a>]]> within a Blazor WebView.
+            
+            Anchor tags with target="_blank" will always open in the default
+            browser and the UrlLoading event won't be called.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.OpenExternally">
+            <summary>
+            Allows loading URLs using an app determined by the system.
+            This is the default strategy for URLs with an external host.
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.OpenInWebView">
+            <summary>
+            Allows loading URLs within the Blazor WebView.
+            This is the default strategy for URLs with a host matching the app origin.
+            <para>
+            This strategy should not be used for external links unless you can ensure they are fully trusted.
+            </para>
+            </summary>
+        </member>
+        <member name="F:Microsoft.AspNetCore.Components.WebView.UrlLoadingStrategy.CancelLoad">
+            <summary>
+            Cancels the current URL loading attempt.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions">
+            <summary>
+            Extension methods to <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddMauiBlazorWebView(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/> to add support for <see cref="T:Microsoft.AspNetCore.Components.WebView.Maui.BlazorWebView"/>.
+            </summary>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.BlazorWebViewServiceCollectionExtensions.AddBlazorWebViewDeveloperTools(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Enables Developer tools on the underlying WebView controls.
+            </summary>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.</returns>
+        </member>
+        <member name="T:ThisAssembly">
+            <summary>Provides access to the current assembly information.</summary>
+        </member>
+        <member name="T:ThisAssembly.Git">
+            <summary>Provides access to the git information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirty">
+            <summary>IsDirty: true</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirtyString">
+            <summary>IsDirtyString: true</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.RepositoryUrl">
+            <summary>Repository URL: https://github.com/dotnet/maui</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Branch">
+            <summary>Branch: 7.0.3xx-sr8</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commit">
+            <summary>Commit: dd89dbde93</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Sha">
+            <summary>Sha: dd89dbde9337294c277500a8b70fe2bafc109207</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.CommitDate">
+            <summary>Commit date: 2023-09-21T18:33:29+01:00</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commits">
+            <summary>Commits on top of base version: 3</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Tag">
+            <summary>Tag: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseTag">
+            <summary>Base tag: </summary>
+        </member>
+        <member name="T:ThisAssembly.Git.BaseVersion">
+            <summary>Provides access to the base version information used to determine the <see cref="T:ThisAssembly.Git.SemVer" />.</summary>      
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Major">
+            <summary>Major: 7</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Patch">
+            <summary>Patch: 93</summary>
+        </member>
+        <member name="T:ThisAssembly.Git.SemVer">
+            <summary>Provides access to SemVer information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Major">
+            <summary>Major: 7</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Patch">
+            <summary>Patch: 96</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Label">
+            <summary>Label: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.DashLabel">
+            <summary>Label with dash prefix: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Source">
+            <summary>Source: File</summary>
+        </member>
+    </members>
+</doc>
