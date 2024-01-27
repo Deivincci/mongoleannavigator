@@ -1,0 +1,11 @@
+2023/10/25-18:35:56.910 3ab8 Reusing MANIFEST C:\DWOLF45\DWOLF\bin\Debug\Mongolean.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2023/10/25-18:35:56.911 3ab8 Recovering log #14
+2023/10/25-18:35:56.911 3ab8 Level-0 table #17: started
+2023/10/25-18:35:56.916 3ab8 Level-0 table #17: 1339 bytes OK
+2023/10/25-18:35:56.917 3ab8 Recovering log #17
+2023/10/25-18:35:56.919 3ab8 Reusing old log C:\DWOLF45\DWOLF\bin\Debug\Mongolean.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000017.log 
+2023/10/25-18:35:56.922 3ab8 Delete type=0 #14
+2023/10/25-18:35:56.922 3ab8 Delete type=2 #18
+2023/10/25-18:36:20.992 3ab8 Level-0 table #19: started
+2023/10/25-18:36:20.999 3ab8 Level-0 table #19: 177100 bytes OK
+2023/10/25-18:36:21.001 3ab8 Delete type=0 #17

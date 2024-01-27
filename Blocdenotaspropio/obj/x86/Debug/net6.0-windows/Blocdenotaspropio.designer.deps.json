@@ -1,0 +1,45 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "print/1.0.0": {
+        "runtime": {
+          "lib/TSCActiveX.dll": {
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/TSCLIB.dll": {
+            "fileVersion": "2.3.0.0"
+          }
+        }
+      },
+      "RawPrint/0.5.0": {
+        "runtime": {
+          "lib/net40/RawPrint.dll": {
+            "assemblyVersion": "0.5.0.0",
+            "fileVersion": "0.5.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "print/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bHsYOQfr2F/czQVTGVy64f9lL9QnJhXOc63En+X3+SuHgLgQ39zHnGnJOI2ftqEb5t7LS58OpUoyPcUNKnc2+w==",
+      "path": "print/1.0.0",
+      "hashPath": "print.1.0.0.nupkg.sha512"
+    },
+    "RawPrint/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MbQu5siz3sXUXht1IeXIQbb5daTPDmEOxo6Crms+b5N2F7tqCOXl3Rn6r5Y+ystz/Cy8lRBPfkMDpZGQnzzxcQ==",
+      "path": "rawprint/0.5.0",
+      "hashPath": "rawprint.0.5.0.nupkg.sha512"
+    }
+  }
+}

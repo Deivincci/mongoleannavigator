@@ -1,0 +1,25 @@
+2023/10/25-18:36:16.629 5a5c Reusing MANIFEST C:\DWOLF45\DWOLF\bin\Debug\Mongolean.exe.WebView2\EBWebView\Default\IndexedDB\https_earth.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/25-18:36:16.629 5a5c Recovering log #11
+2023/10/25-18:36:16.632 5a5c Level-0 table #15: started
+2023/10/25-18:36:16.636 5a5c Level-0 table #15: 50207 bytes OK
+2023/10/25-18:36:16.636 5a5c Recovering log #15
+2023/10/25-18:36:16.639 5a5c Reusing old log C:\DWOLF45\DWOLF\bin\Debug\Mongolean.exe.WebView2\EBWebView\Default\IndexedDB\https_earth.google.com_0.indexeddb.leveldb/000015.log 
+2023/10/25-18:36:16.642 5a5c Delete type=0 #11
+2023/10/25-18:36:16.642 5a5c Delete type=2 #17
+2023/10/25-18:36:17.394 3930 Level-0 table #17: started
+2023/10/25-18:36:17.398 3930 Level-0 table #17: 34099 bytes OK
+2023/10/25-18:36:17.401 3930 Delete type=0 #15
+2023/10/25-18:36:17.401 3930 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at '\x00\x05\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x008\x000\x003\x007\x006\x000\x008\x004\x000\x005\x003\x003\x00:\x00w\x00e\x00b\x00:\x00c\x007\x003\x001\x00a\x002\x00b\x004\x005\x001\x00e\x003\x00e\x001\x00e\x00b\x00d\x00e\x001\x009\x00d\x00c' @ 4179 : 1
+2023/10/25-18:36:17.401 3930 Compacting 2@0 + 0@1 files
+2023/10/25-18:36:17.405 3930 Generated table #18@0: 1350 keys, 20434 bytes
+2023/10/25-18:36:17.405 3930 Compacted 2@0 + 0@1 files => 20434 bytes
+2023/10/25-18:36:17.408 3930 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/10/25-18:36:17.408 3930 Delete type=2 #17
+2023/10/25-18:36:17.409 3930 Manual compaction at level-0 from '\x00\x05\x01\x02\x013\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x008\x000\x003\x007\x006\x000\x008\x004\x000\x005\x003\x003\x00:\x00w\x00e\x00b\x00:\x00c\x007\x003\x001\x00a\x002\x00b\x004\x005\x001\x00e\x003\x00e\x001\x00e\x00b\x00d\x00e\x001\x009\x00d\x00c' @ 4179 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/10/25-18:36:18.734 4ebc Compacting 1@1 + 1@2 files
+2023/10/25-18:36:18.738 4ebc Generated table #19@1: 442 keys, 13970 bytes
+2023/10/25-18:36:18.738 4ebc Compacted 1@1 + 1@2 files => 13970 bytes
+2023/10/25-18:36:18.740 4ebc compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/25-18:36:18.740 4ebc Delete type=2 #13
+2023/10/25-18:36:18.740 4ebc Delete type=2 #15
+2023/10/25-18:36:18.740 4ebc Delete type=2 #18

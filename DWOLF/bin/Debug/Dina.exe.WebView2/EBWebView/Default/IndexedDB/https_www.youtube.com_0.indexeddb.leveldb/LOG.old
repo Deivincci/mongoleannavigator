@@ -1,0 +1,17 @@
+2023/10/10-23:25:00.280 5cf0 Reusing MANIFEST E:\pruebas\DWOLF2\DWOLF45\DWOLF\bin\Debug\Dina.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/10/10-23:25:00.280 5cf0 Recovering log #3
+2023/10/10-23:25:00.281 5cf0 Reusing old log E:\pruebas\DWOLF2\DWOLF45\DWOLF\bin\Debug\Dina.exe.WebView2\EBWebView\Default\IndexedDB\https_www.youtube.com_0.indexeddb.leveldb/000003.log 
+2023/10/10-23:25:01.739 34fc Level-0 table #5: started
+2023/10/10-23:25:02.114 34fc Level-0 table #5: 13304 bytes OK
+2023/10/10-23:25:02.304 34fc Delete type=0 #3
+2023/10/10-23:25:02.304 34fc Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/10/10-23:25:04.115 5868 Level-0 table #7: started
+2023/10/10-23:25:04.221 5868 Level-0 table #7: 47125 bytes OK
+2023/10/10-23:25:04.347 5868 Delete type=0 #4
+2023/10/10-23:25:04.348 770c Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/10/10-23:25:04.348 770c Manual compaction at level-1 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0a\x00\x00\xc8\x18\x00r\x00e\x00s\x00o\x00u\x00r\x00c\x00e\x00-\x00m\x00a\x00n\x00i\x00f\x00e\x00s\x00t\x00-\x00a\x00s\x00s\x00e\x00t\x00s' @ 905 : 1
+2023/10/10-23:25:04.348 770c Compacting 1@1 + 1@2 files
+2023/10/10-23:25:04.498 770c Generated table #8@1: 210 keys, 15753 bytes
+2023/10/10-23:25:04.498 770c Compacted 1@1 + 1@2 files => 15753 bytes
+2023/10/10-23:25:04.722 770c compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/10/10-23:25:04.722 770c Manual compaction at level-1 from '\x00\x0a\x00\x00\xc8\x18\x00r\x00e\x00s\x00o\x00u\x00r\x00c\x00e\x00-\x00m\x00a\x00n\x00i\x00f\x00e\x00s\x00t\x00-\x00a\x00s\x00s\x00e\x00t\x00s' @ 905 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
